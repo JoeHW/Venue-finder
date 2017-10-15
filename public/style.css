@@ -1,0 +1,28 @@
+.social {
+    height: 70px;
+    text-align: center;
+}
+
+.bio-text {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.output {
+margin-top: 150px;
+height: 200px;
+font-size: 1.5em;
+text-align: center;
+
+}
+
+.form-control, .btn {
+  margin-top: 50px;
+}
+
+.table {
+  margin-top: 25px;
+  text-align: center;
+}
