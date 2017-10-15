@@ -1,41 +1,18 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-
-import Searchbar from './components/Searchbar';
-import Datatable from './components/Datatable';
+import FormList from './components/FormList';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      term: ""
-    }
-
- this.searchInput = this.searchInput.bind(this);
-
-  }
-
-searchInput = (event) => {
-  this.setState({term: event.target.value});
-
-}
-
-  render() {
+ render() {
     return (
       <div className="wrapper">
-      <Searchbar searchInput={this.searchInput}/>
+      <FormList products={this.props.products}/>
       <div className="term">
-      {this.state.term}
       </div>
-      <Datatable products={this.props.products} />
       </div>
-    )
-  }
-
-
+    )};
 }
 
 const PRODUCTS = [

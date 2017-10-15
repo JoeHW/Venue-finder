@@ -4,6 +4,7 @@ class Datatable extends Component {
 
 render() {
   const { products } = this.props;
+  let rows = [];
 return(
     <table className="table table-hover">
        <thead>
