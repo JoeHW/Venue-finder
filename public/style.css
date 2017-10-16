@@ -33,5 +33,10 @@ text-align: center;
 }
 
 .drop {
-  width: 65px:
+    margin: 15px 45px 5px 25px;
+    
+}
+
+.input-group-btn {
+  text-align: center;
 }

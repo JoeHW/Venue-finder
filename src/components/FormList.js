@@ -17,8 +17,8 @@ constructor(props){
  this.selectionCheck = this.selectionCheck.bind(this);
 }
 
-selectionCheck = (selection) => {
-this.setState({userSelections : [selection, ...this.state.userSelections]});
+selectionCheck = () => {
+this.setState({userSelections : [this.state.category,this.state.capacity]});
   console.log(this.state.userSelections);
 }
 
@@ -54,6 +54,10 @@ render(){
       <option value="museum">300 - 500</option>
     </select>
     </label>
+    <span className="input-group-btn">
+       <button type="submit" className="btn btn-secondary" onSubmit={() => this.selectionCheck}>Submit</button>
+    </span>
+
   <Datatable products={this.props.products} />
 </div>
 )}
